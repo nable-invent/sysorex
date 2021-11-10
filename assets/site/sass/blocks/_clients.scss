@@ -1,0 +1,48 @@
+/*------------- #CLIENTS --------------*/
+
+
+
+.crumina-clients {
+  padding: 95px 0;
+  background-image: url("../img/clouds12.png");
+}
+
+.clients-item {
+  position: relative;
+  min-height: 50px;
+  display: flex;
+
+  &:hover {
+    img {
+      filter: grayscale(0);
+    }
+  }
+
+  img {
+    position: relative;
+    transition: all .3s linear;
+    transform-style: preserve-3d;
+    filter: grayscale(1);
+  }
+
+  .clients-images {
+    position: relative;
+    display: block;
+    margin: auto;
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1200px) {
+  .crumina-clients {
+    padding: 40px 0;
+  }
+
+  .clients-item {
+    margin-bottom: 20px;
+  }
+}
